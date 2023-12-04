@@ -130,33 +130,33 @@
             tests:
                 - unique
                 - not_null
-            - name: film_title
+          - name: film_title
             description: Title of the film.
-            - name: episode
+          - name: episode
             description: Episode number of the film.
-            - name: opening_crawl
+          - name: opening_crawl
             description: Opening text crawl in film intro.
-            - name: director
+          - name: director
             description: Director of the film.
-            - name: producer
+          - name: producer
             description: Producer(s) of the film.
-            - name: release_date
+          - name: release_date
             description: Date of film release (US).
-            - name: characters
+          - name: characters
             description: Array of characters that appear in the film. Relates to raw.people.
-            - name: planets
+          - name: planets
             description: Array of planets that appear in the film. Relates to raw.planets.
-            - name: species
+          - name: species
             description: Array of species that appear in the film. Relates to raw.species.
-            - name: starships
+          - name: starships
             description: Array of starships that appear in the film. Relates to raw.starships.
-            - name: vehicles
+          - name: vehicles
             description: Array of vehicles that appear in the film. Relates to raw.vehicles.
-            - name: url
+          - name: url
             description: Web address for the resource in SWAPI.
-            - name: created_date
+          - name: created_date
             description: Date the record was created in SWAPI.
-            - name:  edited_date
+          - name: edited_date
             description: Date the record was last edited in SWAPI.
     ```
 1. Add films to the /models/source.yml
@@ -176,6 +176,9 @@
                 description: Title of the film.
             - name: episode_id
                 description: Episode number of the film.
+                test:
+                  - unique
+                  - not_null
             - name: opening_crawl
                 description: Opening text crawl in film intro.
             - name: director
