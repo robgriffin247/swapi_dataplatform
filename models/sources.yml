@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw data extracted from SWAPI.
+    database: swapi_raw
+    schema: swapi
+    tables:
+      - name: films
+        description: One record per film.
+        columns:
+          - name: title
+            description: Title of the film.
+          - name: episode_id
+            description: Episode number of the film.
+          - name: opening_crawl
+            description: Opening text crawl in film intro.
+          - name: director
+            description: Director of the film.
+          - name: producer
+            description: Producer(s) of the film.
+          - name: release_date
+            description: Date of film release (US).
+          - name: characters
+            description: Array of characters that appear in the film.
+          - name: planets
+            description: Array of planets that appear in the film.
+          - name: starships
+            description: Array of starships that appear in the film.
+          - name: vehicles
+            description: Array of vehicles that appear in the film.
+          - name: species
+            description: Array of species that appear in the film. 
+          - name: created
+            description: Date the record was created in SWAPI.
+          - name:  edited
+            description: Date the record was last edited in SWAPI.
+          - name: url
+            description: Web address for the resource in SWAPI.

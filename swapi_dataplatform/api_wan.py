@@ -19,4 +19,6 @@ def api_wan(resource, verbose=True):
         response_json = response.json()
         response_data = response_data + [item for item in response_json['results']]
         if verbose: print(f'Collect page {page} of {resource}')
-    return pd.DataFrame(response_data)
+    
+    response_df = pd.DataFrame(response_data)
+    return response_df

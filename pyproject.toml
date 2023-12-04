@@ -9,6 +9,7 @@ readme = "README.md"
 python =  ">=3.10,<3.11"
 requests = "^2.31.0"
 snowflake-snowpark-python = {extras = ["pandas"], version = "^1.10.0"}
+dbt-snowflake = "^1.7.0"
 
 
 [build-system]
