@@ -1,0 +1,60 @@
+[0m11:35:39.710303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5d561060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5b299fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5b299ff0>]}
+
+
+============================== 11:35:39.726247 | f4183913-7b5a-492c-b203-f8874ef51d1a ==============================
+[0m11:35:39.726247 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:35:39.727993 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/robgriffin247/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:35:39.730081 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/robgriffin247/.dbt')}
+[0m11:35:39.731410 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:35:55.864134 [error] [MainThread]: Encountered an error:
+
+[0m11:35:55.868990 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/task/init.py", line 322, in run
+    project_name = self.get_valid_project_name()
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/task/init.py", line 276, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:35:55.879624 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 16.17254, "process_user_time": 1.962226, "process_kernel_time": 0.30544, "process_mem_max_rss": "100672", "process_out_blocks": "21160", "command_success": false, "process_in_blocks": "0"}
+[0m11:35:55.884210 [debug] [MainThread]: Command `dbt init` failed at 11:35:55.883605 after 16.18 seconds
+[0m11:35:55.887481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5d561060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5b32f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa5b32f610>]}
+[0m11:35:55.890842 [debug] [MainThread]: Flushing usage events
+[0m11:36:28.726160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7c92ef670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7c70a3460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7c70a3400>]}
+
+
+============================== 11:36:28.730363 | a676a135-e4d9-4db0-9080-7cc2ae53f947 ==============================
+[0m11:36:28.730363 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:36:28.732338 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/robgriffin247/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:36:45.663923 [debug] [MainThread]: Starter project path: /home/robgriffin247/.cache/pypoetry/virtualenvs/swapi-dataplatform-DEMA7jFj-py3.10/lib/python3.10/site-packages/dbt/include/starter_project
+[0m11:36:45.854286 [info ] [MainThread]: 
+Your new dbt project "swapi_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:36:45.855500 [info ] [MainThread]: Setting up your profile.
+[0m11:38:43.958316 [info ] [MainThread]: Profile swapi_dbt written to /home/robgriffin247/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:38:43.964580 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 135.24577, "process_user_time": 1.885488, "process_kernel_time": 0.744768, "process_mem_max_rss": "187596", "process_out_blocks": "360", "process_in_blocks": "0"}
+[0m11:38:43.968874 [debug] [MainThread]: Command `dbt init` succeeded at 11:38:43.968497 after 135.25 seconds
+[0m11:38:43.971974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7c92ef670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7cb4231f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7c70a36d0>]}
+[0m11:38:43.974817 [debug] [MainThread]: Flushing usage events

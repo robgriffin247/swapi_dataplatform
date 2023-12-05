@@ -1,0 +1,82 @@
+version: 2
+
+sources:
+  - name: RAW
+    description: Raw data extracted from SWAPI.
+    #quoting:
+    #  identifier: true
+    database: SWAPI
+    schema: RAW
+    tables:
+      - name: FILMS
+        description: One record per film.
+        columns:
+          - name: TITLE
+            description: Title of the film.
+          - name: EPISODE_ID
+            description: Episode number of the film.
+          - name: OPENING_CRAWL
+            description: Opening text crawl in film intro.
+          - name: DIRECTOR
+            description: Director of the film.
+          - name: PRODUCER
+            description: Producer(s) of the film.
+          - name: RELEASE_DATE
+            description: Date of film release (US).
+          - name: CHARACTERS
+            description: Array of characters that appear in the film.
+          - name: PLANETS
+            description: Array of planets that appear in the film.
+          - name: STARSHIPS
+            description: Array of starships that appear in the film.
+          - name: VEHICLES
+            description: Array of vehicles that appear in the film.
+          - name: SPECIES
+            description: Array of species that appear in the film. 
+          - name: CREATED
+            description: Date the record was created in SWAPI.
+          - name: EDITED
+            description: Date the record was last edited in SWAPI.
+          - name: URL
+            description: Web address for the resource in SWAPI.
+            tests:
+              - not_null
+              - unique
+      - name: PEOPLE
+        description: One record per character.
+        columns:
+          - name: NAME
+            description: Character name.
+          - name: HEIGHT
+            description: Character height, in cm.
+          - name: MASS
+            description: Character weight, in kg.
+          - name: HAIR_COLOR
+            description: Character hair color.
+          - name: SKIN_COLOR
+            description: Character skin color.
+          - name: EYE_COLOR
+            description: Character eye color.
+          - name: BIRTH_YEAR
+            description: Character birth year.
+          - name: GENDER
+            description: Character gender.
+          - name: HOMEWORLD
+            description: Character homeworld, refers to raw.planets.
+          - name: FILMS
+            description: Array of films the character appears in.
+          - name: SPECIES
+            description: Array of species that character belongs to.
+          - name: VEHICLES
+            description: Array of vehicles driven by character.
+          - name: STARSHIPS
+            description: Array of starships piloted by character.
+          - name: CREATED
+            description: Date the record was created in SWAPI.
+          - name: EDITED
+            description: Date the record was last edited in SWAPI.
+          - name: URL
+            description: Web address for the resource in SWAPI.
+            tests:
+              - not_null
+              - unique

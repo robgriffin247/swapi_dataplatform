@@ -1,12 +1,23 @@
 ## SWAPI Data Platform
 
+#### Current status:
+
+- Working on building models and adding sources/schema documentation
+  - __TODO__ more models!! int_films on going
+  - __TODO__ investigate RE quoted var names coming in from python/raw?
+- Looking to add DTL, Dagster, HEX and OpenMetaData as priority jobs
+- __TODO__: Update notes about dbt connection to snowflake
+
+#### Step-by-step guide
+
 1. Create GitHub repo
 
 1. Create the necessary warehouse, databases and schemas in Snowflake browser UI (worksheets)
     ```sql
-    create warehouse swapi_dataplatform;
-    create database swapi_raw;
-    create schema swapi_raw.swapi;
+    create warehouse if not exists SWAPI_DATAPLATFORM;
+    create database if not exists SWAPI;
+    create schema if not exists SWAPI.RAW;
+    create schema if not exists SWAPI.DEV_ROB;
     ```
 
 1. Create local directory for the project using `poetry add <project_name>`
@@ -92,7 +103,9 @@
     ```
     - Check the data loaded into the Snowflake data tables
 
-1. __CREATE DBT PROJECT AND CONNECT TO SNOWFLAKE__
+1. `dbt init`
+    - follow terminal prompts (see screenshot and add details)
+
 
 1. Create a model to stage the films data as /models/staging/stg_films.sql
     ```sql
@@ -209,11 +222,3 @@
 
 1. Create and build staging, intermediate and core models for all relevant datasets, including entries in the relevant schema.yml and source.yml files.
 
-
-
-### TODO
-
-- Add Dagster
-- Add OpenMetaData
-- Add Airbyte/DTL
-- 

@@ -21,4 +21,7 @@ def api_wan(resource, verbose=True):
         if verbose: print(f'Collect page {page} of {resource}')
     
     response_df = pd.DataFrame(response_data)
+    response_df.rename(columns=lambda x: x.upper(), inplace=True)
+
+
     return response_df

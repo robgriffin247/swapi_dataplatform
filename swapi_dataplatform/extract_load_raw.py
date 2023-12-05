@@ -9,12 +9,11 @@ ctx = snowflake.connector.connect(
     password=os.getenv('SNOWFLAKE_PASSWORD'),
     account=os.getenv('SNOWFLAKE_ACCOUNT'),
     warehouse=os.getenv('SWAPI_WAREHOUSE'),
-    database=os.getenv('RAW_DATABASE'),
-    schema=os.getenv('RAW_SCHEMA'),
+    database='SWAPI',
+    schema='RAW',
 )
 cs = ctx.cursor()
 
 resources = ['films', 'people', 'planets', 'species', 'starships', 'vehicles']
-
 for res in resources:
-    write_pandas(ctx, api_wan(res), res, auto_create_table=True, overwrite=True)
+    write_pandas(ctx, api_wan(res), res.upper(), auto_create_table=True, overwrite=True)
