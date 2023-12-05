@@ -3,10 +3,10 @@
 #### Current status:
 
 - Working on building models and adding sources/schema documentation
-  - __TODO__ more models!! int_films on going
-  - __TODO__ investigate RE quoted var names coming in from python/raw?
+  - __TODO__ more models!!
 - Looking to add DTL, Dagster, HEX and OpenMetaData as priority jobs
 - __TODO__: Update notes about dbt connection to snowflake
+- __TODO__: Update schema/sources extracts to update with caps, likewise python, sql etc..
 
 #### Step-by-step guide
 
