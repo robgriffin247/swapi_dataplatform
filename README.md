@@ -222,3 +222,12 @@
 
 1. Create and build staging, intermediate and core models for all relevant datasets, including entries in the relevant schema.yml and source.yml files.
 
+| Raw        | Staging         | Intermediate               | Core                    |
+|------------|-----------------|----------------------------|-------------------------|
+| FILMS      | STG_FILMS       | INT_FILMS                  | DIM_FILM_CHARACTERS     |
+| PEOPLE     | STG_CHARACTERS  | **INT_CHARACTERS**         |                         |
+| PLANETS    |                 |                            |                         |
+| SPECIES    |                 |                            |                         |
+| STARSHIPS  |                 |                            |                         |
+| VEHICLES   |                 |                            |                         |
+

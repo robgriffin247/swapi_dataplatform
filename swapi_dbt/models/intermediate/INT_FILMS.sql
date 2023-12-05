@@ -1,5 +1,8 @@
 select
     FILM_ID,
-    URL,
-    OPENING_CRAWL
+    FILM_TITLE,
+    EPISODE,
+    DIRECTOR,
+    PRODUCER,
+    RELEASE_DATE
 from {{ ref('STG_FILMS')}}
