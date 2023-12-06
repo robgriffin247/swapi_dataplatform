@@ -24,6 +24,7 @@ Data comes from SWAPI, the [Star Wars API](https://swapi.dev). The pipeline will
 
 To Do:
 - Add material to instructions below; will repeat the process from scratch on a fresh machine with new accounts to make sure they are thorough.
+- Add dlt, dagster, openmetadata and hex
 
 ### Instructions (to be filled out; will replicate this on a fresh machine to check)
 
