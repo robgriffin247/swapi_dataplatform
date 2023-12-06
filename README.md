@@ -3,7 +3,7 @@
 ### Aim 
 
 Create a functioning data platform using:
-- GitHub and Git for version control and collaboration
+- Git and GitHub for version control and collaboration
 - Snowflake for data warehousing
 - dlt for data extraction and loading
 - dbt for data transformation
