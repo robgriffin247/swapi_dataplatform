@@ -26,7 +26,7 @@ To Do:
 - Add material to instructions below; will repeat the process from scratch on a fresh machine with new accounts to make sure they are thorough.
 - Add dlt, dagster, openmetadata and hex
 
-### Instructions (to be filled out; will replicate this on a fresh machine to check)
+### Instructions
 
 1. Setup WSL
     1. Install Windows Subsystem for Linux (WSL) by running `wsl --install` in Windows Powershell or Command Prompt
