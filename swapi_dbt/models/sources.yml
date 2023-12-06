@@ -3,8 +3,6 @@ version: 2
 sources:
   - name: RAW
     description: Raw data extracted from SWAPI.
-    #quoting:
-    #  identifier: true
     database: SWAPI
     schema: RAW
     tables:

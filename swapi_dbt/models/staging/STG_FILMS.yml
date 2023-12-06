@@ -35,45 +35,5 @@ models:
         description: Web address for the resource in SWAPI.
       - name: CREATED_DATE
         description: Date the record was created in SWAPI.
-      - name:  EDITED_DATE
+      - name: EDITED_DATE
         description: Date the record was last edited in SWAPI.
-  - name: STG_CHARACTERS
-    description: Staging of the raw PEOPLE dataset from SWAPI.
-    columns:
-      - name: CHARACTER_ID
-        description: Primary key.
-        tests:
-          - not_null
-          - unique
-      - name: NAME
-        description: Character name.
-      - name: HEIGHT
-        description: Character height, in cm.
-      - name: MASS
-        description: Character weight, in kg.
-      - name: HAIR_COLOR
-        description: Character hair color.
-      - name: SKIN_COLOR
-        description: Character skin color.
-      - name: EYE_COLOR
-        description: Character eye color.
-      - name: BIRTH_YEAR
-        description: Character birth year.
-      - name: GENDER
-        description: Character gender.
-      - name: HOMEWORLD
-        description: Character homeworld, refers to raw.planets.
-      - name: FILMS
-        description: Array of films the character appears in.
-      - name: SPECIES
-        description: Array of species that character belongs to.
-      - name: VEHICLES
-        description: Array of vehicles driven by character.
-      - name: STARSHIPS
-        description: Array of starships piloted by character.
-      - name: CREATED
-        description: Date the record was created in SWAPI.
-      - name: EDITED
-        description: Date the record was last edited in SWAPI.
-      - name: URL
-        description: Web address for the resource in SWAPI.

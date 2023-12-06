@@ -4,7 +4,7 @@ from math import ceil
 import pandas as pd
 
 def api_wan(resource, verbose=True):
-    if verbose: print(f'Collect page 1 of {resource}')
+    if verbose: print(f'Collecting page 1 of {resource}')
     # Perform initial request; this will get the first page of data and show whether more pages exist
     response = requests.get(f'https://swapi.dev/api/{resource}')
     response_json = response.json()

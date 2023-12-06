@@ -6,9 +6,61 @@
   - __TODO__ more models!!
 - Looking to add DTL, Dagster, HEX and OpenMetaData as priority jobs
 - __TODO__: Update notes about dbt connection to snowflake
-- __TODO__: Update schema/sources extracts to update with caps, likewise python, sql etc..
 
-#### Step-by-step guide
+### Instructions (to be filled out; will replicate this on a fresh machine to check)
+
+1. Setup WSL
+    1. Install Windows Subsystem for Linux (WSL) by running `wsl --install` in Windows Powershell or Command Prompt
+1. Setup Python
+    1. Install Python in WSL
+    1. Setup Linux/Ubuntu profile
+1. Setup Poetry
+    1. Install Poetry in WSL
+    1. Create a Poetry project (will form _project directory_)
+1. Setup Git
+    1. Install Git in WSL
+1. Setup GitHub (and regularly commit and push!)
+    1. Create a GitHub Account
+    1. Create a GitHub repo with the same name as the project directory
+    1. Connect Git to GitHub
+    1. Initialise Git in the project directory
+    1. (Regularly) commit and push; develop on branches
+1. Create .env file and add to .gitignore
+1. Setup Snowflake (add relevant credentials to .env)
+    1. Create a Snowflake account
+    1. Use a worksheet to create a warehouse, database and raw/dev schemas
+1. Setup dbt
+    1. Install dbt in WSL
+    1. Run `dbt init` in the project directory in WSL
+    1. Follow prompts and provide the necessary information for setup 
+1. Create a Python function to extract raw data as Pandas dataframe; `api_wan()`
+1. Load raw data to snowflake with the Python-Snowflake connector
+    1. Create a function that loads a Pandas dataframe to Snowflake; `r2db()`
+    1. Write code to leverage the extract and load functions for each raw asset; `loop_skywalker.py`
+1. Use dbt to create and load staging, intermediate and core modules to Snowflake
+    1. In project_directory/dbt/models/, write 
+        - SQL code to create each module
+        - .yml files for the schemas and source
+        - My preferred example structure:
+        
+        ```
+        models/
+        |- sources.yml
+        |- staging/
+        |  |- STG_FILMS.sql
+        |  |- STG_FILMS.yml
+        |  |- STG_CHARACTERS.sql
+        |  |- STG_CHARACTERS.yml
+        |- intermediate/
+        |  |- INT_FILMS.sql
+        |  |- INT_FILMS.yml
+        ...
+        ...
+        ``` 
+
+----------
+
+#### OLD Step-by-step guide
 
 1. Create GitHub repo
 
