@@ -1,11 +1,29 @@
 ## SWAPI Data Platform
 
-#### Current status:
+### Aim 
 
-- Working on building models and adding sources/schema documentation
-  - __TODO__ more models!!
-- Looking to add DTL, Dagster, HEX and OpenMetaData as priority jobs
-- __TODO__: Update notes about dbt connection to snowflake
+Create a functioning data platform using:
+- GitHub and Git for version control and collaboration
+- Snowflake for data warehousing
+- dlt for data extraction and loading
+- dbt for data transformation
+- Dagster for orchestration
+- OpenMetaData for data governance
+- HEX for a dashboard
+
+The focus is proof-of-concept and testing, not a comprehensive data platform &mdash; just enough to develop and test each component.
+Data comes from SWAPI, the [Star Wars API](https://swapi.dev). The pipeline will generate the following datasets:
+
+| Raw        | Staging         | Intermediate                | Core                       |
+|------------|-----------------|-----------------------------|----------------------------|
+| FILMS      | STG_FILMS       | INT_CHARACTER_APPEARANCES   | DIM_CHARACTER_APPEARANCES  |
+| PEOPLE     | STG_CHARACTERS  |                             |                            |
+
+
+### Current status:
+
+To Do:
+- Add material to instructions below; will repeat the process from scratch on a fresh machine with new accounts to make sure they are thorough.
 
 ### Instructions (to be filled out; will replicate this on a fresh machine to check)
 
@@ -58,7 +76,7 @@
         ...
         ``` 
 
-----------
+<!---------------------------------------------------------
 
 #### OLD Step-by-step guide
 
@@ -273,13 +291,5 @@
 1. Execute `poetry run dbt build` and check that the data has been created in Snowflake
 
 1. Create and build staging, intermediate and core models for all relevant datasets, including entries in the relevant schema.yml and source.yml files.
-
-| Raw        | Staging         | Intermediate               | Core                    |
-|------------|-----------------|----------------------------|-------------------------|
-| FILMS      | STG_FILMS       | INT_FILMS                  | DIM_FILM_CHARACTERS     |
-| PEOPLE     | STG_CHARACTERS  | **INT_CHARACTERS**         |                         |
-| PLANETS    |                 |                            |                         |
-| SPECIES    |                 |                            |                         |
-| STARSHIPS  |                 |                            |                         |
-| VEHICLES   |                 |                            |                         |
+--------->
 
