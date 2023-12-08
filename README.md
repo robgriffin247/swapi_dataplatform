@@ -6,9 +6,9 @@ Create a functioning data platform using:
 - [x] Git and GitHub for version control and collaboration
 - [x] Snowflake for data warehousing
 - [x] Python Pandas & Snowflake Connector for data extraction and loading
-- [-] Switch to dlt data extraction and loading
+- [ ] Switch to dlt data extraction and loading
 - [x] dbt for data transformation
-- [-] Dagster for orchestration
+- [] Dagster for orchestration
 - [-] OpenMetaData for data governance
 - [-] HEX and/or PowerBI for a dashboard
 
