@@ -8,9 +8,9 @@ Create a functioning data platform using:
 - [x] Python Pandas & Snowflake Connector for data extraction and loading
 - [ ] Switch to dlt data extraction and loading
 - [x] dbt for data transformation
-- [] Dagster for orchestration
-- [-] OpenMetaData for data governance
-- [-] HEX and/or PowerBI for a dashboard
+- [ ] Dagster for orchestration
+- [ ] OpenMetaData for data governance
+- [ ] HEX and/or PowerBI for a dashboard
 
 It should also include precommit hooks, to ensure all data sets have a complete yml file and that everything in the yml file has a matching data entry, and a makefile to shorten repetitive command-line actions.
 
