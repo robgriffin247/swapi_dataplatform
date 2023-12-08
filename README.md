@@ -9,7 +9,9 @@ Create a functioning data platform using:
 - dbt for data transformation
 - Dagster for orchestration
 - OpenMetaData for data governance
-- HEX for a dashboard
+- HEX and/or PowerBI for a dashboard
+
+It should also include precommit hooks, to ensure all data sets have a complete yml file and that everything in the yml file has a matching data entry, and a makefile to shorten repetitive command-line actions.
 
 The focus is proof-of-concept and testing, not a comprehensive data platform &mdash; just enough to develop and test each component.
 Data comes from SWAPI, the [Star Wars API](https://swapi.dev). The pipeline will generate the following datasets:
