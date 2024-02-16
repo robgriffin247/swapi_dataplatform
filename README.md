@@ -28,7 +28,7 @@ Data comes from SWAPI, the [Star Wars API](https://swapi.dev). The pipeline will
 ### Current status:
 
 To Do:
-- Connect dbt transformations to duckdb raw data
+- Connect dbt transformations to duckdb raw data: current activity (add_dbt_to_duckdb branch)
 - Update details on raw data in readme
 - Add material to instructions below; will repeat the process from scratch on a fresh machine with new accounts to make sure they are thorough.
 - Add dagster, openmetadata and hex
