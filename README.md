@@ -4,9 +4,11 @@
 
 Create a functioning data platform using:
 - [x] Git and GitHub for version control and collaboration
-- [x] Snowflake for data warehousing
-- [x] Python Pandas & Snowflake Connector for data extraction and loading
-- [ ] Switch to dlt data extraction and loading
+- [x] ~~Python Pandas & Snowflake Connector for data extraction and loading~~
+- [x] dlt to extract and load data
+- [x] DuckDB for databasing
+- [x] ~~Snowflake for data warehousing~~
+- [ ] MotherDuck for data warehousing
 - [x] dbt for data transformation
 - [ ] Dagster for orchestration
 - [ ] OpenMetaData for data governance
@@ -26,9 +28,10 @@ Data comes from SWAPI, the [Star Wars API](https://swapi.dev). The pipeline will
 ### Current status:
 
 To Do:
+- Connect dbt transformations to duckdb raw data
+- Update details on raw data in readme
 - Add material to instructions below; will repeat the process from scratch on a fresh machine with new accounts to make sure they are thorough.
-- Add dlt, dagster, openmetadata and hex
-- Currently testing use of dlt and DuckDB (`dlt/` directory)
+- Add dagster, openmetadata and hex
 
 ### Instructions
 

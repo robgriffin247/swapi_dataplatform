@@ -25,7 +25,7 @@ def swapi_source(resources):
         )
 
 pipeline = dlt.pipeline(
-    pipeline_name="swapi_dynamic_pipeline",
+    pipeline_name="swapi_database",
     destination="duckdb",
     dataset_name="swapi_raw"
 )
