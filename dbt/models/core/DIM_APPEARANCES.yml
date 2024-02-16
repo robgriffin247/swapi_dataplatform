@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: DIM_APPEARANCES
+    description: One row per film, removed array variables and crawl from STG_FILMS.
+    columns:
+      - name: FILM_ID
+        description: ID of film from STG_FILMS.
+      - name: CHARACTER_ID
+        description: ID of character from STG_CHARACTERS.

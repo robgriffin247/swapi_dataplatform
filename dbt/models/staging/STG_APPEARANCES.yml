@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: STG_APPEARANCES
+    description: Character appearances in each film.
+    columns:
+    - name: value
+      description: Character URL
+    - name: _dlt_id
+    - name: _dlt_parent_id
+      description: dlt Film id
+    - name: _dlt_list_idx
+    - name: _dlt_root_id

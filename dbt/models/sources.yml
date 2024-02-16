@@ -23,16 +23,16 @@ sources:
             description: Producer(s) of the film.
           - name: RELEASE_DATE
             description: Date of film release (US).
-          - name: CHARACTERS
-            description: Array of characters that appear in the film.
-          - name: PLANETS
-            description: Array of planets that appear in the film.
-          - name: STARSHIPS
-            description: Array of starships that appear in the film.
-          - name: VEHICLES
-            description: Array of vehicles that appear in the film.
-          - name: SPECIES
-            description: Array of species that appear in the film. 
+          ##- name: CHARACTERS
+          ##  description: Array of characters that appear in the film.
+          ##- name: PLANETS
+          ##  description: Array of planets that appear in the film.
+          ##- name: STARSHIPS
+          ##  description: Array of starships that appear in the film.
+          ##- name: VEHICLES
+          ##  description: Array of vehicles that appear in the film.
+          ##- name: SPECIES
+          ##  description: Array of species that appear in the film. 
           - name: CREATED
             description: Date the record was created in SWAPI.
           - name: EDITED
@@ -42,6 +42,8 @@ sources:
             tests:
               - not_null
               - unique
+          - name: _dlt_load_id
+          - name: _dlt_id
       - name: PEOPLE
         description: One record per character.
         columns:
@@ -63,14 +65,14 @@ sources:
             description: Character gender.
           - name: HOMEWORLD
             description: Character homeworld, refers to raw.planets.
-          - name: FILMS
-            description: Array of films the character appears in.
-          - name: SPECIES
-            description: Array of species that character belongs to.
-          - name: VEHICLES
-            description: Array of vehicles driven by character.
-          - name: STARSHIPS
-            description: Array of starships piloted by character.
+          ##- name: FILMS
+          ##  description: Array of films the character appears in.
+          ##- name: SPECIES
+          ##  description: Array of species that character belongs to.
+          ##- name: VEHICLES
+          ##  description: Array of vehicles driven by character.
+          ##- name: STARSHIPS
+          ##  description: Array of starships piloted by character.
           - name: CREATED
             description: Date the record was created in SWAPI.
           - name: EDITED
@@ -80,3 +82,16 @@ sources:
             tests:
               - not_null
               - unique
+          - name: _dlt_load_id
+          - name: _dlt_id
+      - name: FILMS__CHARACTERS
+        description: Character appearances in each film.
+        columns:
+          - name: value
+            description: Character URL
+          - name: _dlt_id
+          - name: _dlt_parent_id
+            description: dlt Film id
+          - name: _dlt_list_idx
+          - name: _dlt_root_id
+

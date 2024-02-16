@@ -1,1 +1,0 @@
-select * from {{ ref('INT_CHARACTER_APPEARANCES') }}
