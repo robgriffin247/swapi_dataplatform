@@ -19,7 +19,7 @@ def swapi_source(resources):
     for resource in resources:
         yield dlt.resource(
             get_resource(resource),
-            name="raw_"+resource,
+            name=resource.upper(),
             write_disposition="merge",
             primary_key="url"
         )
