@@ -3,8 +3,10 @@ version: 2
 sources:
   - name: RAW
     description: Raw data extracted from SWAPI.
-    database: SWAPI
-    schema: RAW
+    ###database: SWAPI
+    ###schema: RAW
+    database: SWAPI_DATABASE
+    schema: SWAPI_RAW
     tables:
       - name: FILMS
         description: One record per film.

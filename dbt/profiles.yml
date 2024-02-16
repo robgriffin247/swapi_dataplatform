@@ -1,0 +1,6 @@
+swapi_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/mnt/c/Users/robgri/Documents/github/personal/swapi_dataplatform/swapi_database.duckdb'
