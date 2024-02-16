@@ -27,14 +27,14 @@ models:
         description: Character gender.
       - name: HOMEWORLD
         description: Character homeworld, refers to raw.planets.
-      - name: FILMS
-        description: Array of films the character appears in.
-      - name: SPECIES
-        description: Array of species that character belongs to.
-      - name: VEHICLES
-        description: Array of vehicles driven by character.
-      - name: STARSHIPS
-        description: Array of starships piloted by character.
+      ##- name: FILMS
+      ##  description: Array of films the character appears in.
+      ##- name: SPECIES
+      ##  description: Array of species that character belongs to.
+      ##- name: VEHICLES
+      ##  description: Array of vehicles driven by character.
+      ##- name: STARSHIPS
+      ##  description: Array of starships piloted by character.
       - name: CREATED
         description: Date the record was created in SWAPI.
       - name: EDITED

@@ -21,16 +21,16 @@ models:
         description: Producer(s) of the film.
       - name: RELEASE_DATE
         description: Date of film release (US).
-      - name: CHARACTERS
-        description: Array of characters that appear in the film. Relates to raw.people.
-      - name: PLANETS
-        description: Array of planets that appear in the film. Relates to raw.planets.
-      - name: SPECIES
-        description: Array of species that appear in the film. Relates to raw.species.
-      - name: STARSHIPS
-        description: Array of starships that appear in the film. Relates to raw.starships.
-      - name: VEHICLES
-        description: Array of vehicles that appear in the film. Relates to raw.vehicles.
+      ##- name: CHARACTERS
+      ##  description: Array of characters that appear in the film. Relates to raw.people.
+      ##- name: PLANETS
+      ##  description: Array of planets that appear in the film. Relates to raw.planets.
+      ##- name: SPECIES
+      ##  description: Array of species that appear in the film. Relates to raw.species.
+      ##- name: STARSHIPS
+      ##  description: Array of starships that appear in the film. Relates to raw.starships.
+      ##- name: VEHICLES
+      ##  description: Array of vehicles that appear in the film. Relates to raw.vehicles.
       - name: URL
         description: Web address for the resource in SWAPI.
       - name: CREATED_DATE
